@@ -1,23 +1,32 @@
+body{
+	height: 100%;
+}
 .header{
 	z-index: 1;
 	position: fixed;
 	top: 0;
 	width: 85%;
-	height: 15%;
+	height: 10%;
 	background: #000;
 	color: #FFF;
-	padding-left: 15%
+	left: 15%;
+	display: block;
 }
 .title{
 	text-align: center;
+	font-size: 2vw;
 }
 
 .menubody{
+	z-index: 0;
+	top:10%;
+	left: 15%;
 	position: fixed;
-	height: 100%;
+	height: 90%;
 	width: 100%;
 	background: #1F1F1F; 
 	color: #FFF;
+	display: block;
 }
 
 footer{
@@ -122,4 +131,19 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+}
+
+/*INPUT*/
+.bootstrap{
+  width:250px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  outline:none;
+  padding: 6px;
+}
+
+.bootstrap:focus{
+  border:1px solid #56b4ef;
+  box-shadow: 0px 0px 3px 1px #c8def0;
 }
