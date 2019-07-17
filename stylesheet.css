@@ -1,6 +1,19 @@
 body{
 	height: 100%;
 }
+
+p{
+	color: #9C9C9C;
+}
+
+.comptable{
+	width: 80%;
+}
+.comptable td{
+	width: 50%;
+	color: #9C9C9C;
+	border: 1px solid white;
+}
 .header{
 	z-index: 1;
 	position: fixed;
@@ -29,6 +42,28 @@ body{
 	display: inline-block;
 	font-size: 1.5vw;
 }
+.menubody ul{
+	list-style: none;
+}
+.menubody dt{
+	padding: 1vw;
+	font-size: 1.5vw;
+}
+.menubody dd{
+	color: #9C9C9C;
+}
+.menubody ul dt::before, .menubody li::before{
+	content: "\2022";
+	color: red;
+	font-weight: bold;
+	display: inline-block; 
+	width: 1vw;
+	margin-left: -1.5vw;
+}
+.menubody ul li{
+	padding-top: 0;
+	padding-bottom: 0;
+}
 
 footer{
 	display: none;
@@ -46,12 +81,14 @@ footer{
 	padding-top: 1.5vw;
 }
 
-.sidenav a,li {
+.sidenav a, .sidenav li {
   padding: 2.5% 2.5% 2.5% 8%;
   text-decoration: none;
   font-size: 1.5vw;
-  color: #818181;
   display: block;
+}
+a,li{
+	color: #818181;
 }
 
 .sidenav a:hover {
