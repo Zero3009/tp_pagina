@@ -9,11 +9,11 @@
 	</head>
 	<body>
 		<div class="header">
-			<h1 class="title">Placas de video</h1>
+			<h1 class="title">Contacto</h1>
 		</div>
 		<div class="sidenav">
 			<h1>GuiaGamer</h1>
-			<a href="../index.html">Inicio</a>
+			<a href="../../index.html">Inicio</a>
 			<ul id="myUL">
 				<li><span class="tree">Almacenamiento</span>
 					<ul class="nested">
@@ -26,7 +26,7 @@
 					</ul>
 				</li>
 			</ul>
-			<a href="../fuentes.html" id="this">Fuentes</a>
+			<a href="../fuentes.html">Fuentes</a>
 			<a href="../gabinetes.html">Gabinetes</a>
 			<a href="../ram.html">Memorias RAM</a>
 			<a href="../micros.html">Microprocesadores</a>
@@ -50,15 +50,36 @@
 			</ul>
 			<div class="contact">
 				<ul id="myUL3">
-					<a href="../contacto/contacto.html">Contacto</a>
-					<a href="../contacto/cv.pdf">Datos del desarrollador</a>	
+					<a href="../contacto/contacto.html" id="this">Contacto</a>
+					<a href="../contacto/devcv.html">Datos del desarrollador</a>	
 				</ul>
 			</div>
 		</div>
 		<div class="menubody">
-			<h4>Bienvenido al inicio de esta humilde página</h4>
-			<h4>No hay más que ver</h4>
-			<h4>salu3</h4>
+			<h4>¿Tiene alguna duda o sugerencia?</h4>
+			<h4>Comuniquese con nosotros</h4>
+			<form action="mailto:matiasgr3009@gmail.com" method="POST" enctype="text/plain">
+				<div class="container" style=" width: 50%;padding-left: 1vw">
+					<label for="email">Email:</label>
+					<input class="bootstrap" id="email" type="email" name="email" placeholder="ejemplo@ejemplo.com">
+					
+					<label for="nombre">Nombre:</label>
+					<input class="bootstrap" id="nombre" type="text" name="nombre">
+				
+					<label for="apellido">Apellido:</label>
+					<input class="bootstrap" type="text" id="apellido" name="apellido">
+					
+					<label for="content">Asunto</label>
+					<input class="bootstrap" type="text" id="asunto" name="asunto">
+
+					<label for="content">Descripción</label>
+					<textarea class="bootstrap" id="content" name="content"></textarea>
+				
+					<input type="submit" class="btn" name="Enviar" style="">
+					
+				</div>
+					
+			</form>			
 		</div>
 	</body>
 	<footer>

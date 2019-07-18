@@ -1,12 +1,19 @@
 body{
 	height: 100%;
 }
-
+hr{
+	width: 98%;
+}
+h3,h4, h5{
+	padding-left: 1vw;
+}
 p{
 	color: #9C9C9C;
+	padding-left: 1vw;
 }
 .sidenav h1{
 	padding-left: 3vw;
+	font-size: 2vw;
 	color: white;
 }
 .comptable{
@@ -50,10 +57,12 @@ p{
 }
 .menubody dt{
 	padding: 1vw;
+	padding-left: 0;
 	font-size: 1.5vw;
 }
 .menubody dd{
 	color: #9C9C9C;
+	padding-left: 0vw;
 }
 .menubody ul dt::before, .menubody li::before{
 	content: "\2022";
@@ -67,6 +76,9 @@ p{
 	padding-top: 0;
 	padding-bottom: 0;
 }
+.menubody ul li strong{
+	color: white;
+}
 
 footer{
 	display: none;
@@ -74,14 +86,12 @@ footer{
 
 .sidenav {
 	background-color: #2F2F2F;
-  	height: 80%; 
+  	height: 85%; 
 	width: 15%; 
 	position: fixed; 
 	z-index: 2;
 	top: 0;
 	left: 0;
-	/*overflow-x: hidden;*/
-	padding-top: 1.5vw;
 }
 
 .contact{
@@ -90,10 +100,9 @@ footer{
 	width: 15%; 
 	position: fixed; 
 	z-index: 2;
-	top: 80%;
+	top: 85%;
 	left: 0;
 	/*overflow-x: hidden;*/
-	padding-top: 1.5vw;
 }
 
 .sidenav a, .sidenav li, .contact li, .contact a {
@@ -196,6 +205,7 @@ div.desc {
 	font-size: 1.5vw;
 	text-align: center;
 }
+/*FORM*/
 
 /*INPUT*/
 .bootstrap{
@@ -205,6 +215,8 @@ div.desc {
   border: 1px solid #ccc;
   outline:none;
   padding: 6px;
+  display: inline-block;
+  width: 100%;
 }
 
 .bootstrap:focus{
@@ -216,4 +228,70 @@ div.desc {
 	border: ridge #F00 1px;
 	color: #F00 !important;
 	width: 90%
+}
+
+
+
+
+
+
+.btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    background-color: #0F0;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+.btn:focus,
+.btn:active:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus {
+    color: #333;
+    text-decoration: none;
+}
+.btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+/* default
+---------------------------- */
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-default:focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-default:active {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
 }
