@@ -1,44 +1,36 @@
-body{
-	height: 100%;
-}
 hr{
 	width: 98%;
 }
+
+h2{
+	text-align: center;
+}
+
 h3,h4, h5{
 	padding-left: 1vw;
 }
+
 p{
 	color: #9C9C9C;
 	padding-left: 1vw;
 }
+
+/*SIDENAV*/
 .sidenav h1{
-	padding-left: 3vw;
-	font-size: 2vw;
+	padding-left: 1.5vw;
 	color: white;
 }
+
+/*BODY*/
 .comptable{
 	width: 80%;
 }
 .comptable td{
 	width: 50%;
 	color: #9C9C9C;
-	border: 1px solid white;
+	border: 0.1vw solid white;
 }
-.header{
-	z-index: 1;
-	position: fixed;
-	top: 0;
-	width: 85%;
-	height: 10%;
-	background: #000;
-	color: #FFF;
-	left: 15%;
-	display: block;
-}
-.title{
-	text-align: center;
-	font-size: 2vw;
-}
+
 .menubody{
 	overflow-y: scroll;
 	z-index: 0;
@@ -79,6 +71,19 @@ p{
 .menubody ul li strong{
 	color: white;
 }
+/*HEAD*/
+.header{
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	width: 85%;
+	height: 10%;
+	background: #000;
+	color: #FFF;
+	left: 15%;
+	display: block;
+}
+
 
 footer{
 	display: none;
@@ -117,21 +122,6 @@ a,li{
 
 a:hover {
   color: #f1f1f1;
-}
-
-
-.button {
-	background-color: #4CAF50;
-	border: none;
-	color: white;
-	padding: 15px 25px;
-	text-align: center;
-	font-size: 16px;
-	cursor: pointer;
-}
-
-.button:hover {
-  background-color: green;
 }
 
 /*TREEVIEW*/
@@ -193,7 +183,7 @@ div.photocontainer
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 0.1vw solid #777;
 }
 
 div.gallery img {
@@ -205,93 +195,45 @@ div.desc {
 	font-size: 1.5vw;
 	text-align: center;
 }
-/*FORM*/
 
-/*INPUT*/
-.bootstrap{
-  width:250px;
-  border-radius: 5px;
-  background: #fff;
-  border: 1px solid #ccc;
-  outline:none;
-  padding: 6px;
-  display: inline-block;
-  width: 100%;
-}
 
-.bootstrap:focus{
-  border:1px solid #56b4ef;
-  box-shadow: 0px 0px 3px 1px #c8def0;
-}
-
+/*WARNINGS*/
 .warn{
-	border: ridge #F00 1px;
+	border: ridge #F00 0.1vw;
 	color: #F00 !important;
 	width: 90%
 }
 
 
-
-
-
-
-.btn {
-    font-size: 14px;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    background-color: #0F0;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-}
-.btn:focus,
-.btn:active:focus {
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
-}
-.btn:hover,
-.btn:focus {
-    color: #333;
-    text-decoration: none;
-}
-.btn:active {
-    background-image: none;
-    outline: 0;
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+/*FORM*/
+/*INPUT*/
+.myinput{
+  border-radius: 0.5vw;
+  background: #fff;
+  border: 0.1vw solid #ccc;
+  outline:none;
+  padding: 0.5vw;
+  display: inline-block;
+  width: 100%;
 }
 
-/* default
----------------------------- */
-.btn-default {
-    color: #333;
-    background-color: #fff;
-    border-color: #ccc;
+.myinput:focus{
+  border:0.1vw solid #56b4ef;
+  box-shadow: 0vw 0vw 0.2vw 0.1vw #c8def0;
 }
-.btn-default:focus {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #8c8c8c;
+
+/*BUTTON*/
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	margin-top: 1vw;
+	padding: 0.7vw 1vw;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
 }
-.btn-default:hover {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad;
-}
-.btn-default:active {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad;
+
+.button:hover {
+	background-color: green;
 }
