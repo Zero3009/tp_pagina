@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="../../css/stylesheet.css">
-		<title>GuiaGamer</title>
+		<title>GuiaGamer - Contacto</title>
 	</head>
 	<body>
 		<div class="header">
-			<h1 class="title">Contacto</h1>
+			<h2 class="title">Contacto</h2>
 		</div>
 		<div class="sidenav">
 			<h1>GuiaGamer</h1>
@@ -30,8 +30,6 @@
 			<a href="../micros.html">Microprocesadores</a>
 			<a href="../motherboards.html">Motherboards</a>
 			<a href="../placasdevideo.html">Placas de video</a>
-			
-		 	
 			<ul id="myUL2">
 				<li>
 					<span class="tree">Refrigeración</span>
@@ -56,24 +54,24 @@
 			<h4>¿Tiene alguna duda o sugerencia?</h4>
 			<h4>Comuniquese con nosotros</h4>
 			<form action="mailto:matiasgr3009@gmail.com" method="POST" enctype="text/plain">
-				<div class="container" style=" width: 50%;padding-left: 1vw">
+				<div class="container">
 					<label for="email">Email:</label>
-					<input class="myinput" id="email" type="email" name="email" placeholder="ejemplo@ejemplo.com">
+					<input required class="myinput" id="email" type="email" name="email" placeholder="ejemplo@ejemplo.com">
 					
 					<label for="nombre">Nombre:</label>
-					<input class="myinput" id="nombre" type="text" name="nombre" placeholder="Juan">
+					<input required class="myinput" id="nombre" type="text" name="nombre" placeholder="Juan">
 				
 					<label for="apellido">Apellido:</label>
-					<input class="myinput" type="text" id="apellido" name="apellido" placeholder="Perez">
+					<input required class="myinput" type="text" id="apellido" name="apellido" placeholder="Perez">
 					
 					<label for="content">Asunto</label>
-					<input class="myinput" type="text" id="asunto" name="asunto" placeholder="Sugerencia de.../Duda sobre...">
+					<input required class="myinput" type="text" id="asunto" name="asunto" placeholder="Sugerencia de.../Duda sobre...">
 
 					<label for="content">Descripción</label>
-					<textarea class="myinput" id="content" name="content" placeholder="Escribo para consultar..."></textarea>
+					<textarea required class="myinput" id="content" name="content" placeholder="Escribo para consultar..."></textarea>
 				
 					<input type="submit" class="button" name="Enviar" style="">
-					
+					<input type="reset" class="button reset" name="Enviar" style="">
 				</div>
 			</form>			
 		</div>
